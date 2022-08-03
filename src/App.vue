@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-  <nav id="nav" class="navbar bg-light">
+  <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
       
         
     <a class="navbar-brand" href="#">
@@ -9,10 +9,37 @@
           height="30" 
           class="d-inline-block align-text-top">
           MentalHealth
+
+          <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarToggler">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item">
+                    <router-link to="/" class="nav-link">Home</router-link>
+                  </li>
+                  <li class="nav-item">
+                    <router-link to="/login" class="nav-link">Login</router-link>
+                  </li>
+                  <li class="nav-item">
+                    <router-link to="/singup" class="nav-link">Singup</router-link>
+                  </li>
+
+              </ul>
+
+            
+          </div>
+
         </a>
-          <router-link to="/">Home</router-link> |
-          <router-link to="/login">Login</router-link> |
-          <router-link to="/singup">Singup</router-link>
+         
   </nav>
 
 <div class="container-fluid"></div>
@@ -42,3 +69,4 @@ nav {
   }
 }
 </style>
+
