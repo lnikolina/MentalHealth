@@ -1,10 +1,23 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/login">Login</router-link> |
-    <router-link to="/singup">Singup</router-link>
+<div id="app">
+  <nav id="nav" class="navbar bg-light">
+      
+        
+    <a class="navbar-brand" href="#">
+      <img src="@/assets/MentalHealthRGB.jpeg" 
+          alt=""
+          height="30" 
+          class="d-inline-block align-text-top">
+          MentalHealth
+        </a>
+          <router-link to="/">Home</router-link> |
+          <router-link to="/login">Login</router-link> |
+          <router-link to="/singup">Singup</router-link>
   </nav>
-  <router-view/>
+
+<div class="container-fluid"></div>
+<router-view/>
+</div>
 </template>
 
 <style lang="scss">
