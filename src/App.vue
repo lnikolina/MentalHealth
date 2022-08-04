@@ -1,26 +1,27 @@
 <template>
 <div id="app">
   <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
-      
-        
     <a class="navbar-brand" href="#">
       <img src="@/assets/MentalHealthRGB.jpeg" 
+          class="d-inline-block align-top"
           alt=""
           height="30" 
-          class="d-inline-block align-text-top">
+          loading="lazy" />
           MentalHealth
+    </a>      
 
           <button 
             class="navbar-toggler" 
             type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" 
+            data-toggle="collapse" 
+            data-target="#navbarToggler" 
+            aria-controls="navbarToggler" 
             aria-expanded="false" 
             aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
 
+            <span class="navbar-toggler-icon"></span>
+          </button>
+ 
           <div class="collapse navbar-collapse" id="navbarToggler">
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li class="nav-item">
@@ -32,18 +33,22 @@
                   <li class="nav-item">
                     <router-link to="/singup" class="nav-link">Singup</router-link>
                   </li>
+              </ul>  
+              
+              
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
 
-              </ul>
-
-            
-          </div>
-
-        </a>
-         
+          </div>  
+          
+              
   </nav>
+   
 
-<div class="container-fluid"></div>
-<router-view/>
+  <div class="container">
+    <router-view/>
+  </div>
 </div>
 </template>
 
@@ -58,6 +63,8 @@
 
 nav {
   padding: 30px;
+  background-color: #81CBC7;
+  color: #81CBC7;
 
   a {
     font-weight: bold;
